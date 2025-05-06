@@ -1,0 +1,44 @@
+# Laravel & Composer
+/vendor/
+/node_modules/
+
+# Laravel environment variables
+.env
+.env.backup
+.env.production
+
+# Laravel log files
+/storage/*.log
+/storage/framework/*
+/storage/testing/*
+/storage/sessions/*
+
+# User-uploaded files (if symlinked in public)
+public/storage/
+
+# Compiled files
+/public/js/
+/public/css/
+/public/build
+/public/hot
+
+# Miscellaneous
+/.phpunit.cache
+.phpactor.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+auth.json
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore other unnecessary files
+*.log
