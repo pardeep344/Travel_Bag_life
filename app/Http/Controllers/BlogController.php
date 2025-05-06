@@ -13,7 +13,7 @@ class BlogController extends Controller
         return view('admin.Blog.Blog-card', compact('blogs'));
     }
 
-    // Store new blog entry
+    
     public function store(Request $request){
         $request->validate([
             'image'=>'nullable|image|mimes:jpg,jpeg,png|max:10240',
