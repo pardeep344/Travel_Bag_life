@@ -142,7 +142,7 @@ class SliderController extends Controller
 
         public function edit($id) {
             $slider = Slider::find($id);
-            return view('admin.offerslider.slider');
+            return view('admin.offerslider.slider',compact('slider'));
         }
 
         public function destroy($id){
