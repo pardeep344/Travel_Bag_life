@@ -5,7 +5,7 @@
     @foreach ($banners as $banner )
 
     <div class="banner-div">
-        <a href="{{$banner->url}}"><img src="{{'storage/' .$banner->image}}" alt="image not found"></a>
+        <a href="{{$banner->url}}"><img src="{{'storage/' .$banner->image}}" alt="image not found" loading="eager"></a>
     </div>
     
     @endforeach

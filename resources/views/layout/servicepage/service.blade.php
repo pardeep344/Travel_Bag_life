@@ -4,7 +4,7 @@
   
     @foreach ( $bookingdetails as $bookingdetail)
     <div class="service-card">
-        <div class="service-card-img"><a href="#"><img src="{{ asset('storage/' .$bookingdetail->image) }}" alt="not found" class="blog_img"></a></div>
+        <div class="service-card-img"><a href="#"><img src="{{ asset('storage/' .$bookingdetail->image) }}" alt="not found" class="blog_img" loading="eager"></a></div>
         <div class="service-card-context">
             <div class="service-card-parha"><p>{{$bookingdetail->placeName}}</p></div>
             <div class="service-card-location"><p>Location: {{$bookingdetail->location}}</p></div>

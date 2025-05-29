@@ -1,7 +1,7 @@
 <div class="parent-container menu-container">
     <div>
         @isset($logo)
-        <img src="{{ asset('storage/' .$logo->logoimg) }}" alt="Logo" width="100">
+        <img src="{{ asset('storage/' .$logo->logoimg) }}" alt="Logo" width="100" loading="eager">
 
     @endisset
     </div>

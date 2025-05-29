@@ -3,7 +3,7 @@
   
     @foreach ($blogs as $blog)
     <div class="blog-card">
-        <div class="blog-card-img"><a href="#"><img src="{{ asset('storage/' . $blog->image) }}" alt="not found" class="blog_img"></a></div>
+        <div class="blog-card-img"><a href="#"><img src="{{ asset('storage/' . $blog->image) }}" alt="not found" class="blog_img" loading="eager"></a></div>
         <div class="blog-card-context">
             <div class="blog-parha">{{$blog->description}}</div>
             <div class="blog-date">{{$blog->publishDate}}</div>

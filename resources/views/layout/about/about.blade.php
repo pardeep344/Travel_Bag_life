@@ -8,7 +8,7 @@
         <div class="ab-img">
             @if($aboutDatas->image)
                 <a href="#">
-                    <img src="{{ asset('storage/' . $aboutDatas->image) }}" alt="not found" class="ab-left-img">
+                    <img src="{{ asset('storage/' . $aboutDatas->image) }}" alt="not found" class="ab-left-img" loading="eager">
                 </a>
             @else
                 <p>No image available.</p>
@@ -37,7 +37,7 @@
             
             @foreach ($secSliders as $secSlider)
                 <div class="slide">
-                    <div><a href=""><img src="{{ asset('storage/' . $secSlider->image) }}" alt="img not found" class="slide-imgs"></a></div>
+                    <div><a href=""><img src="{{ asset('storage/' . $secSlider->image) }}" alt="img not found" class="slide-imgs" loading="eager"></a></div>
                     <div class="card-title"><p>Name: {{ $secSlider->title }}</p></div>
                     <div class="card-description"><p>Description: {{ $secSlider->description }}</p></div>
                     <div class="card-price"><p>Price: {{ $secSlider->price }}</p></div>

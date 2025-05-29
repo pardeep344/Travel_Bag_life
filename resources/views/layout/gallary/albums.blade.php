@@ -6,7 +6,7 @@
     @foreach ($countryGroups as $countryGroup)
       <div class="gallery-item">
         <a href="{{ $countryGroup->url }}" class="gallery-item">
-          <img src="{{ asset('storage/' . $countryGroup->image) }}" alt="{{ $countryGroup->countryName }}">
+          <img src="{{ asset('storage/' . $countryGroup->image) }}" alt="{{ $countryGroup->countryName }}" loading="eager">
           <p class="caption">{{ $countryGroup->countryName }}</p>
         </a>
       </div>
